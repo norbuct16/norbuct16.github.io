@@ -1,5 +1,5 @@
 """
-Portfolio site ; Flask app.
+Portfolio site — Flask app.
 
 Almost everything you'd want to personalise (name, contact links, projects,
 skills, achievements, experience) lives in the data below. Edit here first;
@@ -11,12 +11,12 @@ from datetime import datetime
 
 from flask import Flask, render_template
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder=".")
 
 
 # ---------------------------------------------------------------------------
 # Images
-# Paths are relative to static/. Drop your files at these exact locations ;
+# Paths are relative to static/. Drop your files at these exact locations —
 # the template checks whether they exist and swaps a placeholder box for the
 # real photo automatically, no code changes needed.
 # ---------------------------------------------------------------------------
@@ -52,7 +52,7 @@ SITE["initials"] = "".join(part[0] for part in SITE["name"].split()[:2]).upper()
 
 
 # ---------------------------------------------------------------------------
-# About section ; right-hand fact list
+# About section — right-hand fact list
 # ---------------------------------------------------------------------------
 ABOUT_FACTS = [
     {"label": "Based in", "value": "Canberra, ACT, Australia"},
@@ -67,7 +67,7 @@ FEATURED_PROJECT_TAGS = ["Python", "Cisco", "AlgoSec", "Automation", "Report gen
 
 # ---------------------------------------------------------------------------
 # Selected projects
-# Example projects shaped around common IT-graduate interests ; replace with
+# Example projects shaped around common IT-graduate interests — replace with
 # real projects and their actual GitHub/demo links as you build them.
 # dot_class must match a .cat-dot-* rule in static/css/style.css.
 # ---------------------------------------------------------------------------
@@ -94,12 +94,12 @@ PROJECTS = [
 # ---------------------------------------------------------------------------
 EXPERIENCE = [
     {
-        "role": "Software Engineering Intern",
+        "role": "Project Development Intern",
         "org": "Innovation Central Canberra",
         "date": "Jun 2025 – Aug 2025",
         "description": (
             "Developed an automation solution for device vulnerability and "
-            "lifecycle reporting in collaboration with Cisco and AlgoSec ; "
+            "lifecycle reporting in collaboration with Cisco and AlgoSec — "
             "covering project planning, delivery, and stakeholder engagement. "
             "Won Best Project across all teams and reached the AIIA ACT Finals, "
             "Student category."
@@ -111,7 +111,7 @@ EXPERIENCE = [
         "date": "Oct 2021",
         "description": (
             "Mentored students preparing for the TOEFL exam, delivering "
-            "strategies, lesson content, and presentation practice ; early "
+            "strategies, lesson content, and presentation practice — early "
             "experience in communication and structured teaching."
         ),
     },

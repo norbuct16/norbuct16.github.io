@@ -11,7 +11,7 @@
       <p class="hero-eyebrow">{{ site.location }}</p>
       <h1>{{ site.name }}</h1>
       <p class="hero-role">{{ site.role }}</p>
-      <p class="hero-desc">I like working where code, networks, and security meet; recently that meant automating vulnerability reporting; lately it's meant learning to build the interfaces that make systems like that easier to use.</p>
+      <p class="hero-desc">I like working where code, networks, and security meet ; recently that meant automating vulnerability reporting; lately it's meant learning to build the interfaces that make systems like that easier to use.</p>
       <div class="hero-cta">
         <a class="btn btn-on-dark" href="#work">View projects</a>
         <a class="btn btn-ghost-on-dark" href="{{ url_for('static', filename=site.resume_file) }}" download="{{ site.resume_filename }}">Download résumé</a>
@@ -61,7 +61,7 @@
       <div class="section-head">
         <h2>About</h2>
       </div>
-      <p>I'm a recent Network and Software Engineering graduate from the University of Canberra, finishing with Second Class Honours (Division II) and a WAM of 82.6. I'm drawn to the intersection of software, networks, and security; building tools that make systems easier to monitor, secure, and automate.</p>
+      <p>I'm a recent Network and Software Engineering graduate from the University of Canberra, finishing with Second Class Honours (Division II) and a WAM of 82.6. I'm drawn to the intersection of software, networks, and security ; building tools that make systems easier to monitor, secure, and automate.</p>
       <p>During my internship at Innovation Central Canberra, I helped automate a manual reporting process using data from Cisco and AlgoSec, which won Best Project across all teams. Since then I've been building on that by picking up frontend development and applied AI/ML alongside my networking and security background.</p>
     </div>
     <div class="about-side">
@@ -90,13 +90,13 @@
     <div class="section-head">
       <span class="eyebrow">Featured project</span>
       <h2>Automating vulnerability and lifecycle reporting</h2>
-      <p class="featured-meta">Innovation Central Canberra, in collaboration with Cisco and AlgoSec; Jun to Aug 2025</p>
+      <p class="featured-meta">Innovation Central Canberra, in collaboration with Cisco and AlgoSec ; Jun to Aug 2025</p>
     </div>
     <div class="featured-grid">
       <div>
         <div class="featured-block">
           <h3>Problem</h3>
-          <p>Compiling device vulnerability and lifecycle reports across the network was a manual, multi-step process; slow to produce and easy to get wrong, which delayed remediation decisions.</p>
+          <p>Compiling device vulnerability and lifecycle reports across the network was a manual, multi-step process ; slow to produce and easy to get wrong, which delayed remediation decisions.</p>
         </div>
         <div class="featured-block">
           <h3>Approach</h3>
@@ -127,7 +127,7 @@
         </div>
 
         <!-- ================= PROJECT DIAGRAM ================= -->
-        <!-- To edit by hand: templates/index.html, inside <div class="diagram-card"> below. -->
+        <!-- To edit by hand: index.html (project root), inside <div class="diagram-card"> below. -->
         <div class="diagram-card">
           <svg viewBox="0 0 480 300" xmlns="http://www.w3.org/2000/svg">
             <defs>
@@ -153,7 +153,7 @@
             <path d="M186,150 L300,150" stroke="#0E6E76" stroke-width="1.6" fill="none" marker-end="url(#arrow)"/>
             <path d="M186,255 L300,174" stroke="#0E6E76" stroke-width="1.6" fill="none" marker-end="url(#arrow)"/>
           </svg>
-          <p class="diagram-caption">Three assessment sources; baseline compliance, software vulnerabilities, and lifecycle status; consolidated into one unified assessment and report.</p>
+          <p class="diagram-caption">Three assessment sources ; baseline compliance, software vulnerabilities, and lifecycle status ; consolidated into one unified assessment and report.</p>
         </div>
       </div>
     </div>
@@ -167,7 +167,7 @@
       <h2>Selected projects</h2>
       <p>A few things I've built to practice turning networking, security, and data problems into working software.</p>
     </div>
-    <!-- Card data lives in app.py (PROJECTS); edit there, not here. -->
+    <!-- Card data lives in app.py (PROJECTS) ; edit there, not here. -->
     <div class="project-grid">
       {% for project in projects %}
         {{ render_project_card(project) }}
