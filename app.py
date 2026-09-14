@@ -94,7 +94,7 @@ PROJECTS = [
 # ---------------------------------------------------------------------------
 EXPERIENCE = [
     {
-        "role": "Project Development Intern",
+        "role": "Software Engineer Intern",
         "org": "Innovation Central Canberra",
         "date": "Jun 2025 – Aug 2025",
         "description": (
