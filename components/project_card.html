@@ -9,8 +9,9 @@
     {% for tag in project.tags %}<span class="tag">{{ tag }}</span>{% endfor %}
   </div>
   <div class="project-links">
-    <a href="{{ project.github }}">{{ icon_github() }}GitHub</a>
+    {% if project.github %}<a href="{{ project.github }}">{{ icon_github() }}GitHub</a>{% endif %}
     {% if project.demo %}<a href="{{ project.demo }}">{{ icon_external() }}Live demo</a>{% endif %}
+    {% if project.link %}<a href="{{ project.link }}" target="_blank" rel="noopener noreferrer" aria-label="View live website">{{ icon_external() }}Live website</a>{% endif %}
   </div>
 </article>
 {% endmacro %}

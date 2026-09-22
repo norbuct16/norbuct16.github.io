@@ -86,6 +86,20 @@ PROJECTS = [
     "github": "https://github.com/norbuct16/Integrated-Web-Vulnerability-Scanner",
     
     },
+
+    {
+    "category": "Web Development · Full-Stack",
+    "dot_class": "cat-dot-web-development",
+    "title": "Live Website for Café",
+    "description": (
+        "Designed and developed a complete, production website for Tulips Café, currently live and serving customers. "
+        "Built a fully responsive, custom-designed interface covering the menu, location, hours, and contact details, alongside an integrated online table reservation system for collecting customer booking details. "
+        "Implemented local SEO practices; optimised titles, meta descriptions, semantic heading structure, and image alt text, to target relevant café and location-based searches. "
+        "Configured a custom domain and managed production deployment, with attention to performance, accessibility, and usability across desktop, tablet, and mobile."
+    ),
+    "tags": ["Web Development", "Responsive Design", "UI/UX Design", "Reservation System", "SEO", "Local SEO", "Accessibility", "Production Deployment"],
+    "link": "https://www.tulipscafe.com.au",
+    }
 ]
 
 
